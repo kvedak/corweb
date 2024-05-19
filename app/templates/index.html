@@ -1,9 +1,84 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block body %}
+<h1>Home Page</h1>
 
-{% block title %} Home {% endblock %}
+<div class="row ms-1 me-1">
+  <!--- Last Block before footer -->
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <!--North Beach Status Pane -->
+    <h3 style="font-size: 150%" class="text-primary">North Beach</h3>
+    <!-- <a href="/NorthBeach"> -->
+    <img
+      id="ctl00_ContentPlaceHolder1_Image2"
+      alt="North Beach"
+      src="static/img/North%20Beach.png"
+    />
+    <!-- </a> -->
+    <p style="font-size: x-large">
+      <strong>Swimming Status: </strong
+      ><span
+        id="ctl00_ContentPlaceHolder1_northBeachStatusLabel"
+        style="font-size: Larger"
+        >End of season</span
+      >
+      <br />
+      <!-- <strong>Water Temp: </strong><span id="ctl00_ContentPlaceHolder1_northBeachTempLabel"></span> -->
+    </p>
+    <!-- North Beach Status Pane -->
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <!--Zoo Beach Status Pane -->
+    <h3 style="font-size: 150%" class="text-primary">Zoo Beach</h3>
+    <!-- <a href="/ZooBeach">-->
+    <img
+      id="ctl00_ContentPlaceHolder1_Image3"
+      alt="Zoo Beach"
+      src="static/img/Zoo%20Beach.png"
+    />
+    <!-- </a> -->
+    <p style="font-size: x-large">
+      <strong>Swimming Status: </strong
+      ><span
+        id="ctl00_ContentPlaceHolder1_zooBeachStatusLabel"
+        style="font-size: Larger"
+        >End of season</span
+      >
+      <br />
+      <!-- <strong>Water Temp: </strong><span id="ctl00_ContentPlaceHolder1_zooBeachTempLabel"></span> -->
+    </p>
+    <!--End Beach Status Pane -->
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <h3 style="font-size: 150%" class="text-primary">
+      From the Desk of Mayor Mason
+    </h3>
 
+    <div class="row">
+      <div class="col-lg-11">
+        <img
+          class="img-fluid img-thumbnail float-start pull-left me-1"
+          src="static/img/Cory%20Mason%20Thumb.png"
+        />
+        <div id="ctl00_ContentPlaceHolder1_ContentBlock2">
+          <p>
+            Whether you are a resident, visitor or possible visitor to Racine,
+            welcome to the website of our fine City.
+          </p>
+          <p>
+            Need to call the city but are not sure of which department?
+            Call&nbsp;<b>262-636-9101</b> to be directed to the correct
+            department.
+          </p>
+        </div>
+        <a
+          href="/Mayor"
+          class="btn btn-primary btn-block btn-custom btn-blue btn-mayor"
+          ><i class="fa fa-caret-right"></i>Visit the Mayor's Page
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--End Mayors Corner-->
 
-{% block body %}
-    <h1>Home Page</h1>
+  <!--End last block before footer -->
+</div>
 {% endblock %}
-    
